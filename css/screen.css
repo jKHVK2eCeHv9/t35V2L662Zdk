@@ -1,0 +1,5 @@
+.ui-header {border-top:25px solid #000000;}
+#logo {width:373px;background:#FFFFFF;padding:15px 20px;margin:auto;border:1px solid #E9E9E9;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+#logo-img {width:373px;}
+#copyright {text-align:center;font-size:12px;color:#DDDDDD;margin-top:30px;border-top:1px solid #E9E9E9;padding-top:30px;}
+.ui-state-error {background:#FEF1EC;border:1px solid #CD0A0A;color:#CD0A0A;padding:0 15px;}

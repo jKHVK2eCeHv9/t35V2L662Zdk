@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>DS Remote - Disclosure Services</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<link href="css/screen.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/smartphone.css" media="only screen and (min-device-width : 320px) and (max-device-width : 480px)">
+<link rel="stylesheet" href="css/smartphone-landscape.css" media="only screen and (min-width : 321px)">
+<link rel="stylesheet" href="css/smartphone-portrait.css" media="only screen and (max-width : 320px)">
+<link rel="stylesheet" href="css/ipad.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)">
+<link rel="stylesheet" href="css/ipad-landscape.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)">
+<link rel="stylesheet" href="css/ipad-portrait.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)">
+<link rel="stylesheet" href="css/iphone4.css" media="only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)">
+</head>
+<body>
+<div data-role="page" id="home">
+<div data-role="header"><h1>DS Remote</h1></div>
+<div data-role="content">
+<div id="logo"><img src="https://www.disclosureservices.com/img/disclosure_services.jpg" id="logo-img" /></div>
+<h2>Disclosure Scotland Application</h2>
+<p><strong>Please login below to continue:</strong></p>
+<form action="https://www.disclosureservices.com/mobile-apps/ds-remote/v1.0/gateway.asp" method="post">
+<fieldset>
+<label for="EmailAddress">Username:</label><input type="text" name="EmailAddress" id="EmailAddress" />
+<label for="Password">Password:</label><input type="password" name="Password" id="Password" />
+<input type="hidden" name="function" value="gateway_sign_in" />
+<button type="submit">Login</button>
+</fieldset>
+</form>
+<div id="copyright"><strong>&copy; 2014 Disclosure Services</strong><br/>Powered by Primo Interactive</div>
+</div>
+</div>
+<div data-role="page" id="offline">
+<div data-role="header" data-backbtn="false"><h1>DS Remote</h1></div>
+<div data-role="content">
+<p class="error"><strong>Error: Offline</strong></p>
+<p>DS Remote requires an active Internet connection. Data is retrieved in real-time from disclosureservices.com, so you need to ensure you have an Internet connection available.</p>
+<p>The bandwidth required is small, so either a WiFi or cellular data connection will be fine.</p>
+<ul data-role="listview" data-inset="true">
+<li><a href="#home">Try Again</a></li>
+</ul>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+function doConnectFunction() {}
+function doNoConnectFunction() {$.mobile.changePage('#offline');}
+var i = new Image();
+i.onload = doConnectFunction;
+i.onerror = doNoConnectFunction;
+i.src = 'https://www.disclosureservices.com/img/disclosure_services.jpg?x=' + escape(Date());
+</script>
+<script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="phonegap.js"></script>
+</body>
+</html>

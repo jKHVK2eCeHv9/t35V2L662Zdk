@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="1.0">
+<preference name="phonegap-version" value="3.5.0" />
+<name>DS Remote</name>
+<description>DS Remote from Disclosure Services allows candidates and employees to complete a Criminal Record check application, which the employer can then submit via the Disclosure Scotland application process. Disclosure Scotland applications enable employers to access the criminal record history of people working, or seeking to work, in certain positions, especially those that involve working with Children or Adults in specific situations.</description>
+<author href="http://www.primointeractive.com" email="studio@primointeractive.com">Primo Interactive</author>
+<preference name="orientation" value="default" />
+<preference name="target-device" value="universal" />
+<preference name="fullscreen" value="true" />
+<preference name="stay-in-webview" value="true" />
+<preference name="exit-on-suspend" value="true" />
+<preference name="show-splash-screen-spinner" value="false" />
+<preference name="splash-screen-duration" value="3000" />
+<preference name="disable-cursor" value="true" />
+<icon src="icon.png" />
+<icon src="icons/ios/57.png" width="57" height="57" />
+<icon src="icons/ios/72.png" gap:platform="ios" width="72" height="72" />
+<icon src="icons/ios/76.png" width="76" height="76" />
+<icon src="icons/ios/114.png" width="114" height="114" />
+<icon src="icons/ios/120.png" width="120" height="120" />
+<icon src="icons/ios/152.png" width="152" height="152" />
+<gap:splash src="splash.png" />
+<gap:splash src="splash/ios/320x480.png" width="320" height="480" />
+<gap:splash src="splash/ios/640x960.png" width="640" height="960" />
+<gap:splash src="splash/ios/640x1136.png" width="640" height="1136" />
+<gap:splash src="splash/ios/1024x768.png" width="1024" height="768" />
+<gap:splash src="splash/ios/768x1024.png" width="768" height="1024" />
+<preference name="permissions" value="none"/>
+<access origin="https://www.disclosureservices.com" subdomains="true" />
+<access origin="https://code.jquery.com" subdomains="true" />
+<access origin="http://pcls1.craftyclicks.co.uk" subdomains="true" />
+</widget>
