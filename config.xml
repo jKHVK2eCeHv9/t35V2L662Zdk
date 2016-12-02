@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="2.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="2.0.1">
 <name>DS Remote</name>
 <description>DS Remote from Disclosure Services allows candidates and employees to complete a Criminal Record check application, which the employer can then submit via the Disclosure Scotland application process. Disclosure Scotland applications enable employers to access the criminal record history of people working, or seeking to work, in certain positions, especially those that involve working with Children or Adults in specific situations.</description>
 <author href="https://www.primointeractive.com/" email="studio@primointeractive.com">Primo Interactive</author>
-<preference name="phonegap-version" value="cli-5.4.1" />
+<preference name="phonegap-version" value="cli-6.3.0" />
 <preference name="orientation" value="default" />
 <preference name="target-device" value="universal" />
 <preference name="fullscreen" value="true" />
@@ -20,7 +20,6 @@
 <preference name="android-minSdkVersion" value="9" />
 <preference name="android-installLocation" value="auto" />
 <preference name="android-build-tool" value="gradle" />
-<gap:plugin name="org.apache.cordova.battery-status" />
 <gap:plugin name="org.apache.cordova.camera" />
 <gap:plugin name="org.apache.cordova.media-capture" />
 <gap:plugin name="org.apache.cordova.console" />
