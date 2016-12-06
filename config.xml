@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="2.0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="2.0.3">
 <name>DS Remote</name>
 <description>DS Remote from Disclosure Services allows candidates and employees to complete a Criminal Record check application, which the employer can then submit via the Disclosure Scotland application process. Disclosure Scotland applications enable employers to access the criminal record history of people working, or seeking to work, in certain positions, especially those that involve working with Children or Adults in specific situations.</description>
 <author href="https://www.primointeractive.com/" email="studio@primointeractive.com">Primo Interactive</author>
-<preference name="phonegap-version" value="cli-6.3.0" />
+<preference name="phonegap-version" value="cli-5.4.1" />
 <preference name="orientation" value="default" />
 <preference name="target-device" value="universal" />
 <preference name="fullscreen" value="true" />
@@ -39,11 +39,13 @@
 <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
 <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
 <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 <icon src="icon.png" />
 <icon src="icons/ios/57.png" gap:platform="ios" width="57" height="57" />
 <icon src="icons/ios/72.png" gap:platform="ios" width="72" height="72" />
+<icon src="icons/ios/76.png" gap:platform="ios" width="76" height="76" />
 <icon src="icons/ios/114.png" gap:platform="ios" width="114" height="114" />
+<icon src="icons/ios/120.png" gap:platform="ios" width="120" height="120" />
+<icon src="icons/ios/152.png" gap:platform="ios" width="152" height="152" />
 <gap:splash src="splash.png" />
 <gap:splash src="splash/ios/320x480.png" gap:platform="ios" width="320" height="480" />
 <gap:splash src="splash/ios/640x960.png" gap:platform="ios" width="640" height="960" />

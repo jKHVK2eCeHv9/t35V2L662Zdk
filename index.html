@@ -30,7 +30,26 @@
 <div id="copyright"><strong>&copy; 2016 Disclosure Services</strong><br/>(v2.0) Powered by Primo Interactive</div>
 </div>
 </div>
+<div data-role="page" id="offline">
+<div data-role="header" data-backbtn="false"><h1>DBS Remote</h1></div>
+<div data-role="content">
+<p class="error"><strong>Error: Offline</strong></p>
+<p>DBS Remote requires an active Internet connection. Data is retrieved in real-time from disclosureservices.com, so you need to ensure you have an Internet connection available.</p>
+<p>The bandwidth required is small, so either a WiFi or cellular data connection will be fine.</p>
+<ul data-role="listview" data-inset="true">
+<li><a href="#home">Try Again</a></li>
+</ul>
+</div>
+</div>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+function doConnectFunction() {}
+function doNoConnectFunction() {$.mobile.changePage('#offline');}
+var i = new Image();
+i.onload = doConnectFunction;
+i.onerror = doNoConnectFunction;
+i.src = 'https://www.disclosureservices.com/css/disclosure-services-logo.png?x=' + escape(Date());
+</script>
 <script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <script src="phonegap.js"></script>
 </body>
