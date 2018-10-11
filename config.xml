@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="2.0.13">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.primointeractive.dsdsremote" version="2.0.14">
 <name>DS Remote</name>
 <description>DS Remote from Disclosure Services allows candidates and employees to complete a Criminal Record check application, which the employer can then submit via the Disclosure Scotland application process. Disclosure Scotland applications enable employers to access the criminal record history of people working, or seeking to work, in certain positions, especially those that involve working with Children or Adults in specific situations.</description>
 <author href="https://www.primointeractive.com/" email="studio@primointeractive.com">Primo Interactive</author>
